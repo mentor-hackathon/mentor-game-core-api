@@ -22,7 +22,7 @@
   },
   "servers": [
     {
-      "url": "https://hackathon-mentor-core.ngrok.io",
+      "url": "https://mentor-game-core-api.herokuapp.com",
       "description": "Development server"
     },
     {
