@@ -1,0 +1,14 @@
+{
+  "host": "https://hackathon-mentor-core.ngrok.io",
+  "port": "",
+  "production": true,
+  "proxy": {
+    "enabled": false
+  },
+  "cron": {
+    "enabled": false
+  },
+  "admin": {
+    "autoOpen": false
+  }
+}

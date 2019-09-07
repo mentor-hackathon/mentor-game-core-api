@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "activity",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "user_id": {
+      "required": true,
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "answer": {
+      "model": "answer"
+    },
+    "game": {
+      "model": "session",
+      "via": "activities"
+    }
+  }
+}

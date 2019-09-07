@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "answer",
+  "info": {
+    "name": "answer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "answer": {
+      "type": "string"
+    },
+    "is_correct": {
+      "type": "boolean",
+      "default": true
+    },
+    "question": {
+      "model": "question",
+      "via": "answers"
+    }
+  }
+}

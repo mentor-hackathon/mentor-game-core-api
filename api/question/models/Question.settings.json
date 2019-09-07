@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "question",
+  "info": {
+    "name": "question",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "question": {
+      "required": true,
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "text",
+        "video",
+        "image"
+      ],
+      "type": "enumeration"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "category": {
+      "model": "category",
+      "via": "questions"
+    },
+    "session": {
+      "model": "session",
+      "via": "questions"
+    },
+    "answers": {
+      "collection": "answer",
+      "via": "question"
+    }
+  }
+}

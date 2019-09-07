@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "game",
+  "info": {
+    "name": "session",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "start_at": {
+      "type": "date"
+    },
+    "end_start": {
+      "type": "date"
+    },
+    "duration": {
+      "type": "integer",
+      "default": "300"
+    },
+    "number_of_question": {
+      "type": "integer",
+      "default": "10"
+    },
+    "category": {
+      "model": "category"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "game"
+    },
+    "questions": {
+      "collection": "question",
+      "via": "session"
+    }
+  }
+}

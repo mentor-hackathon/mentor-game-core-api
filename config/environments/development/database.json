@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "test",
+        "host": "cluster0-shard-00-00-tnovm.gcp.mongodb.net:27017,cluster0-shard-00-01-tnovm.gcp.mongodb.net:27017,cluster0-shard-00-02-tnovm.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true",
+        "srv": false,
+        "port": 27017,
+        "username": "admin",
+        "password": "W3lcom3123"
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
